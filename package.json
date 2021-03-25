@@ -8,9 +8,13 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/pugswap/pugswap-sdk.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pugswap/pugswap-sdk.git"
+  },
   "keywords": [
     "pugswap",
+    "harmony",
     "ethereum"
   ],
   "module": "dist/sdk.esm.js",
@@ -23,7 +27,7 @@
     "prepublishOnly": "tsdx build"
   },
   "dependencies": {
-    "@pugswap-libs/pug-swap-core": "^0.1.0",
+    "@pugswap-libs/pug-swap-core": "git+https://github.com/pugswap/pug-swap-core.git",
     "big.js": "^5.2.2",
     "decimal.js-light": "^2.5.0",
     "jsbi": "^3.1.1",
@@ -56,5 +60,13 @@
     "printWidth": 120,
     "semi": false,
     "singleQuote": true
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/pugswap/pugswap-sdk/issues"
+  },
+  "homepage": "https://github.com/pugswap/pugswap-sdk#readme",
+  "directories": {
+    "test": "test"
+  },
+  "author": ""
 }
